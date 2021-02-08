@@ -1,0 +1,95 @@
+// === common style ===
+:root {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Jomhuria', cursive;
+    color: hsl(0, 0, 100%);
+    background: #000;
+}
+
+.drum-kit {
+    min-height: 100vh;
+    padding: 0 1.5rem;
+    background:  url('../images/drum-bg-1920.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+// === / common style ===
+
+// === main styles ===
+.drum-kit-keys {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.drum-kit-key {
+    border: .3rem solid hsl(0, 0, 100%);
+    border-radius: .5rem;
+    max-width: 7rem;
+    width: 100%;
+    padding: 1rem .5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all .08s linear;
+
+    &__name {
+        font-size: 4rem;
+        text-shadow: 0 0 1rem hsla(208, 89%, 50%, .5);
+        color: hsl(308, 89%, 50%);
+        text-transform: uppercase;
+    }
+    
+    &__description {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: hsl(121, 12%, 50%);
+    }
+
+    &:hover {
+        box-shadow: 0 0 2rem hsl(0, 0, 100%);
+        border-color: hsl(0, 0, 70%);
+    }
+
+    &:hover .drum-kit-key__description {
+       color: hsl(101, 30%, 70%);
+    }
+}
+
+.play {
+    border-color: hsl(0, 100%, 50%);
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem hsl(0, 100%, 50%);
+}
+// === / main styles ===
+
+// === media ===
+@media (max-width: 840px) {
+    .drum-kit-keys {
+        max-width: 45rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .drum-kit-keys {
+        max-width: 35rem;
+    }
+}
+// === / media ===
+

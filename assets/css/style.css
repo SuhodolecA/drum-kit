@@ -1,0 +1,108 @@
+:root {
+  font-size: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Jomhuria', cursive;
+  color: white;
+  background: #000;
+}
+
+.drum-kit {
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  background: url("../images/drum-bg-1920.jpg") no-repeat center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.drum-kit-keys {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.drum-kit-key {
+  border: 0.3rem solid white;
+  border-radius: .5rem;
+  max-width: 7rem;
+  width: 100%;
+  padding: 1rem .5rem;
+  margin: 1rem;
+  cursor: pointer;
+  -webkit-transition: all .08s linear;
+  transition: all .08s linear;
+}
+
+.drum-kit-key__name {
+  font-size: 4rem;
+  text-shadow: 0 0 1rem rgba(14, 135, 241, 0.5);
+  color: #f10ed3;
+  text-transform: uppercase;
+}
+
+.drum-kit-key__description {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #708f71;
+}
+
+.drum-kit-key:hover {
+  -webkit-box-shadow: 0 0 2rem white;
+          box-shadow: 0 0 2rem white;
+  border-color: #b3b3b3;
+}
+
+.drum-kit-key:hover .drum-kit-key__description {
+  color: #aac99c;
+}
+
+.play {
+  border-color: red;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 2rem red;
+          box-shadow: 0 0 2rem red;
+}
+
+@media (max-width: 840px) {
+  .drum-kit-keys {
+    max-width: 45rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .drum-kit-keys {
+    max-width: 35rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

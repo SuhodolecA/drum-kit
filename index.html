@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drum kit</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
     <div class="drum-kit">
         <div class="drum-kit-keys">
-            <div class="drum-kit-key">
-                <div data-key="81" class="drum-kit-key__name">q</div>
+            <div data-key="81" class="drum-kit-key">
+                <div class="drum-kit-key__name">q</div>
                 <div class="drum-kit-key__description">clap</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="87" class="drum-kit-key__name">w</div>
+            <div data-key="87" class="drum-kit-key">
+                <div class="drum-kit-key__name">w</div>
                 <div class="drum-kit-key__description">hihat</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="69" class="drum-kit-key__name">e</div>
+            <div data-key="69" class="drum-kit-key">
+                <div class="drum-kit-key__name">e</div>
                 <div class="drum-kit-key__description">kick</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="82" class="drum-kit-key__name">r</div>
+            <div data-key="82" class="drum-kit-key">
+                <div class="drum-kit-key__name">r</div>
                 <div class="drum-kit-key__description">openhat</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="84" class="drum-kit-key__name">t</div>
+            <div data-key="84" class="drum-kit-key">
+                <div class="drum-kit-key__name">t</div>
                 <div class="drum-kit-key__description">boom</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="89" class="drum-kit-key__name">y</div>
+            <div data-key="89" class="drum-kit-key">
+                <div class="drum-kit-key__name">y</div>
                 <div class="drum-kit-key__description">ride</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="85" class="drum-kit-key__name">u</div>
+            <div data-key="85" class="drum-kit-key">
+                <div class="drum-kit-key__name">u</div>
                 <div class="drum-kit-key__description">snare</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="73" class="drum-kit-key__name">i</div>
+            <div data-key="73" class="drum-kit-key">
+                <div class="drum-kit-key__name">i</div>
                 <div class="drum-kit-key__description">tom</div>
             </div>
-            <div class="drum-kit-key">
-                <div data-key="79" class="drum-kit-key__name">o</div>
+            <div data-key="79" class="drum-kit-key">
+                <div class="drum-kit-key__name">o</div>
                 <div class="drum-kit-key__description">tink</div>
             </div>
         </div>
@@ -59,5 +68,8 @@
     <audio data-key="85" src="assets/sounds/snare.wav"></audio>
     <audio data-key="73" src="assets/sounds/tom.wav"></audio>
     <audio data-key="79" src="assets/sounds/tink.wav"></audio>
+
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
